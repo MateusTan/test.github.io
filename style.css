@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*scroll effect*/
+.navbar-trans {
+    height: 130px;
+  background-color: #c9cdd3;
+  border: none;
+  transition: top 1s ease;
+    color: #E52B50;
+    opacity: 0.75;
+ 
+}
+ 
+/*double row*/
+.navbar-doublerow > .navbar{
+	display: block;	
+	padding: 0px auto;
+	margin: 0px auto;
+	min-height: 25px;
+}
+.navbar-doublerow .nav{
+	padding: 0px auto;
+}
+.navbar-doublerow .dividline{
+  margin: 5px 100px;
+  padding-top: 1px;
+  background-color: inherit;
+}
+/*top nav*/
+.navbar-doublerow .navbar-top ul>li>a {
+	padding: 10px auto;
+	font-sie: 12px;
+} 
+/*down nav*/
+.navbar-doublerow .navbar-down .navbar-brand {
+	padding: 0px auto;
+	float: left;
+	color: #000;
+	font-size: 32px;
+}
+.navbar-doublerow .navbar-down ul>li>a{
+	font-size: 16px;
+	color: #000;
+	transition: border-bottom .2s ease-in , transform .2s ease-in-out;
+}
+.navbar-doublerow .navbar-down ul>li>a:hover{
+	border-bottom: 1px solid #E52B50;
+	color: #E52B50;
+}
+.navbar-doublerow .navbar-down .dropdown{
+    padding: 5px;
+    color: #000;
+}
+.navbar-doublerow .navbar-down .dropdown ul>li>a,
+.navbar-doublerow .navbar-down .dropdown ul>li>a:hover{
+  color: #E52B50;
+  border-bottom: none;
+}
+.navbar-doublerow.navbar-trans.afterscroll {
+}	
+.navbar-doublerow.navbar-trans.afterscroll {
+   top:-63px;
+}	
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-item {
+}
+/*text*/
+.text-white{
+color:#E52B50!important;
+font-size: 14px;}
+/*fontcolor*/
+.light-grey {color:#E52B50!important;background-color:#E6E9ED!important}
+
+
+.fa-instagram{
+    font-size: 26px !important;
+    
+}
+.fa-facebook-official{
+    font-size: 26px !important;
+    
+}
+.fa-facebook-official:hover{
+    color: white;
+}
+
+.picturesy{
+    width:270px;
+    position: fixed;
+    top: 3px;
+    left: 30px;
+}
+
+header{
+    max-width: 100%;
+    height: auto;
+color: #fff;
+margin: 0;
+    
+/*padding: 200px 0 260px 0;*/
+background-size: cover;
+}*
+
+
+/*Icons*/
+#social {
+  margin: 30px;
+  text-align: left;
+}
+
+.smGlobalBtn { /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:2px solid #ddd; /* add border to the buttons */
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #E52B50;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #4060A5 ;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+/*insta*/
+.fa-instagram{
+    background: #E52B50;
+    
+}
+
+
+
+.fa-instagram:hover{
+    text-decoration: none;
+    color: white;
+     background:  
+   
+   linear-gradient( #400080, transparent), 
+  
+  
+   
+ linear-gradient( 
+   200deg, #d047d1, #ff0000,    #ffff00); /* change the border color on mouse hover */
+}
+/*CONTACT FORMULARZ*/
+ #contact{
+    padding:10px 0 10px;
+  }
+
+  .contact-text{
+    margin:45px auto;
+  }
+
+  .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+
+  .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+
+  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+
+  .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+
+/* Input Styles */
+
+  .form{
+    width: 100%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form:hover{
+    border:1px solid #E52B50;
+  }
+
+  .form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #E52B50;
+  }
+
+  .textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+/* Generic Button Styles */
+
+  .button{
+    padding:8px 12px;
+    background:#0A5175;
+    display: block;
+    width:120px;
+    margin:10px 0 0px 0;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    font-size:0.8em;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .button:hover{
+    background:#8BC3A3;
+    color:white;
+  }
+
+/* Send Button Styles */
+
+  .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#fff;
+    background:#c9cdd3;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .form-btn:hover{
+    background:#E52B50;
+    color: white;
+    border:none;
+  }
+
+  .form-btn:active{
+    opacity: 0.9;
+  }
+center{
+  margin-top:330px;
+}
+input {
+    position: relative;
+    z-index: 9999;
+}
+
+/*kontakt*/
+.kontakten{
+    text-align: center;
+    color: #E52B50;
+}
+
+.wiadomosc{
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: #E52B50;
+}
+
+/*oferten*/
+.oferten{
+    background-color: #c9cdd3;
+    
+    z-index: -1;
+}
+.thumbnail{
+    background: none;
+}
+h3{
+color: #E52B50;
+}
+h2{
+color: #E52B50;
+}
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.mainword{
+    color:  #E52B50;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 1px 2px #c9cdd3 ;
+    font-style: italic;
+     margin-top: 50px;
+    
+};
+
+.onasimg{
+    width: 350px;
+    height: 350px;
+}
+.onastekst{
+    text-align: center;
+    font-size: 19px;
+}
+
+.oferty{
+    text-align: center;
+}
+.oferty2{
+    text-align: center;
+    font-size: 20px;
+}
